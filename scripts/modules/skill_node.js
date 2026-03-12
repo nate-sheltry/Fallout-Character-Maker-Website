@@ -26,7 +26,7 @@ const __throwingValue = document.querySelector("[data-reference=\"Throwing\"]").
 const __trapsValue = document.querySelector("[data-reference=\"Traps\"]").querySelector(".skill-value");
 const __unarmedValue = document.querySelector("[data-reference=\"Unarmed\"]").querySelector(".skill-value");
 
-const tagBonus = 15;
+const tagBonus = 20;
 
 let tagPoints = 3;
 
