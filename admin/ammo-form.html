@@ -1,0 +1,17 @@
+<form method="POST" class="ammo-form">
+    <p>Ammo</p>
+    <fieldset>
+        <label for="name">Name:<input type="text" name="name" placeholder=".44 Magnum"></label>
+        <label for="value">Cost:<input type="number" name="value" placeholder="1000"></label>
+        <label for="ac">AC Modifier:<input type="number" name="ac" placeholder="10"></label>
+        <label for="dr">DR Modifier:<input type="text" name="dr" placeholder="0 Ignores DT" pattern="^\d+.*$"></label>
+        <label for="vol">Amount:<input type="number" name="vol" placeholder="20"></label>
+        <label for="dmg">Damage:<input type="text" name="dmg" placeholder="1d6" pattern="^\d+d\d+$"></label>
+        <label for="weight">Weight:<input type="number" name="weight" placeholder="20"></label>
+        <label for="category">Categories:<input type="text" name="category" placeholder="handguns,big guns,rifles"></label>
+        <label for="img">Image:<input type="text" name="img" placeholder="no-image.png" value="no-image.png"></label>
+    </fieldset>
+    <input type="hidden" name="formType" value="ammoForm">
+    <label for="API_TOKEN">API Token:<input type="text" name="API_TOKEN"></label>
+    <button>Submit Item</button>
+</form>

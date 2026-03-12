@@ -1,0 +1,31 @@
+[
+    {
+        "name":"Brown Noser",
+        "description":"You’ve learned how to suck up to your superiors. You get +1 Charisma for reaction roles when dealing with authority figures for each rank of this perk. ",
+        "ranks":2,
+        "requirements": {
+            "charisma":5,
+            "intelligence":6,
+            "level":2
+        }
+    },
+    {
+        "name":"Die Hard",
+        "description":"You won’t go down without a fight! When your hit points drop below 20% of your maximum, you get an additional 10% Damage Resistance to all types of damage.",
+        "ranks":1,
+        "requirements": {
+            "medicine":40,
+            "endurance":6,
+            "level":2
+        }
+    },
+    {
+        "name":"Wild Wasteland",
+        "description":"You experience the wildest things the wasteland has to offer. Every time you take a level of this perk your crit chance for Survival checks increases by 10%.",
+        "ranks":2,
+        "requirements": {
+            "survival":50,
+            "level":2
+        }
+    },
+]

@@ -1,6 +1,10 @@
-const __healthBlock = document.getElementById('health_block')
+const __healthBlock = document.getElementById('hp_block')
 const __healthBar = __healthBlock.children[0];
 const __healthPoints = __healthBlock.children[1];
+
+const __tempBlock = document.getElementById('hp_block')
+const __tempBar = __healthBlock.children[0];
+const __tempPoints = __healthBlock.children[1];
 
 const __healthModifiers = document.getElementById('hp_modifiers');
 

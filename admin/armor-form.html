@@ -1,0 +1,33 @@
+<form method="POST" class="armor-form">
+    <p>Armor</p>
+    <fieldset>
+        <legend>Main Info</legend>
+        <label for="name">Name:<input type="text" name="name" placeholder="Combat Armor"></label>
+        <label for="value">Cost:<input type="number" name="value" placeholder="1000"></label>
+        <label for="ac">Armor Class:<input type="number" name="ac" placeholder="10"></label>
+        <label for="elecRes">Electric Resistance:<input type="number" name="elecRes" placeholder="20"></label>
+        <label for="poisRes">Poison Resistance:<input type="number" name="poisRes" placeholder="20"></label>
+        <label for="radRes">Radiation Resistance:<input type="number" name="radRes" placeholder="20"></label>
+        <label for="weight">Weight:<input type="number" name="weight" placeholder="20"></label>
+        <label for="otherBonuses">Other Bonuses:<input type="text" name="otherBonuses" placeholder="+1 Strength"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Damage Resistance</legend>
+        <label for="drNormal">Normal:<input type="number" name="drNormal" placeholder="20"></label>
+        <label for="drFire">Fire:<input type="number" name="drFire" placeholder="20"></label>
+        <label for="drPlasma">Plasma:<input type="number" name="drPlasma" placeholder="20"></label>
+        <label for="drLaser">Laser:<input type="number" name="drLaser" placeholder="20"></label>
+        <label for="drExplosion">Explosion:<input type="number" name="drExplosion" placeholder="20"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Damage Threshold</legend>
+        <label for="dtNormal">Normal:<input type="number" name="dtNormal" placeholder="5"></label>
+        <label for="dtFire">Fire:<input type="number" name="dtFire" placeholder="5"></label>
+        <label for="dtPlasma">Plasma:<input type="number" name="dtPlasma" placeholder="5"></label>
+        <label for="dtLaser">Laser:<input type="number" name="dtLaser" placeholder="5"></label>
+        <label for="dtExplosion">Explosion:<input type="number" name="dtExplosion" placeholder="5"></label>
+    </fieldset>
+    <input type="hidden" name="formType" value="armorForm">
+    <label for="API_TOKEN">API Token:<input type="text" name="API_TOKEN"></label>
+    <button>Submit Item</button>
+</form>

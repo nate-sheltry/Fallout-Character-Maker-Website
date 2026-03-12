@@ -1,5 +1,6 @@
 "use strict";
 //Import functions from other script files\
+import * as DB from './IndexedDB.js';
 import * as Sp from './modules/special_node.js';
 import * as Sk from './modules/skill_node.js';
 import * as Stat from './modules/secondaryStatistics_node.js';
@@ -158,3 +159,7 @@ __traitWrapper.addEventListener("pointerover", traitHoverEffect);
 
 
 Traits.traitPageUpdate();
+
+document.querySelector('#save_data').addEventListener('click', (e)=>{
+    
+})

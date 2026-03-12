@@ -17,13 +17,31 @@
     font-size:1.5em;
 }
 
-#hp_block {
+#health_block {
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+#health_block:nth-child(3){
+    flex-basis:100%;
+}
+
+#hp_block, #temp_block {
     position:relative;
     width:fit-content;
-    left:calc(52% - 2.3em);
-    margin-top:max(-39%, -5em);
-    margin-bottom:min(24%, 3.25em);
-    font-size:min(8vw, 2em);
+    margin-bottom:.5em;
+}
+.container-text{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:140px;
+    height:3.6em;
+    text-align:center;
 }
 
 /*Mozilla Compatibility*/
@@ -36,21 +54,22 @@ input[type='number']::-webkit-outer-spin-button{
     margin: 0;
 }
 
-#hp_block #min, #hp_block #max {
+#hp_block .min, #hp_block .max, #temp_block .min, #temp_block .max {
     border:none;
     outline:none;
     background:none;
     width:1.65em;
     font-size:min(8vw, 2rem);
 }
-#hp_block #min{
+#hp_block .min, #temp_block .min{
     text-align:right;
 }
-#hp_block #min:hover, #hp_block #max:hover {
+#hp_block #min:hover, #hp_block #max:hover, #temp_block .min:hover, #temp_block .max:hover {
     background-color:var(--hover-color);
 }
 
 #hp_modifiers {
+    width:100%;
     display:flex;
     justify-content:space-around;
     margin-bottom:2em;
@@ -137,7 +156,7 @@ input[type='number']::-webkit-outer-spin-button{
     grid-template-columns: 50% auto auto auto;
     grid-template-rows: 1;
     font-family: Calibri;
-    font-size: .98em;
+    font-size: 1em;
     padding: .15em;
     margin:.1em 0;
     color: var(--hover-color);
@@ -163,4 +182,18 @@ input[type='number']::-webkit-outer-spin-button{
     width:2em;
     height:28px;
     text-align: end;
+}
+
+
+@media screen and (min-width:600px){
+    .two-column {
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+    #skill-button {
+        grid-column:1;
+    }
+    #skill_box {
+        grid-column:1;
+    }
 }
